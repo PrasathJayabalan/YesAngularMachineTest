@@ -1,0 +1,24 @@
+
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav role="navigation">
+      </mat-sidenav>
+      <mat-sidenav-content>
+          <mat-toolbar color="primary">
+              <div fxHide.gt-xs>
+                  <button mat-icon-button>
+                      <mat-icon>menu</mat-icon>
+                  </button>
+              </div>
+              <div>
+                  <a routerLink="/userlogin">User Profile portfolio  <i class='fas fa-users' style='font-size:36px'></i>
+                  </a>
+              </div>
+
+            </mat-toolbar>
+        <main>
+
+<router-outlet></router-outlet>
+</main>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+

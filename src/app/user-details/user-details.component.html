@@ -1,0 +1,32 @@
+<div class="flex-container">
+<button type="button" class="btn" (click)="adduser()">  Add User</button>
+
+</div>
+<div class="container">
+<div class="col-md-6" >
+  <h2> User Details</h2>
+
+  <table class="table table-striped">
+      <thead>
+          <tr>
+            <th >UserID</th>
+            <th >AccountName</th>
+            <th>FullName</th>
+            <th>City</th>
+            <th>Country</th>
+            <th>CommonName</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let user of Users">
+            <td >{{user.UserID}}</td>
+            <td>{{user.AccountName}}</td>
+            <td>{{user.FullName | uppercase}}</td>
+            <td>{{user.City }}</td>
+            <td>{{user.Country}}</td>
+            <td>{{user.CommonName}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
